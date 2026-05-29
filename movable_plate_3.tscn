@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvcn2ov3i56cv"]
+
+[ext_resource type="Texture2D" uid="uid://bayxm4l03v1r6" path="res://sprites/sprite/tile map.png" id="1_58uf6"]
+[ext_resource type="Script" uid="uid://brqexai48jgxx" path="res://movable_plate_3.gd" id="1_sfp5o"]
+[ext_resource type="Script" uid="uid://iu2pxm18orls" path="res://area_2d.gd" id="3_3fa0e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_41vy0"]
+size = Vector2(55, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqjsa"]
+size = Vector2(53, 0.5)
+
+[node name="movable plate3" type="AnimatableBody2D"]
+script = ExtResource("1_sfp5o")
+
+[node name="AnimatableBody2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_58uf6")
+region_enabled = true
+region_rect = Rect2(207.74998, 7.5, 67.500015, 52.499996)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -2)
+shape = SubResource("RectangleShape2D_41vy0")
+one_way_collision = true
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_3fa0e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, -17.25)
+shape = SubResource("RectangleShape2D_eqjsa")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

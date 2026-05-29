@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bslqpfkla1kju"]
+
+[ext_resource type="Texture2D" uid="uid://bayxm4l03v1r6" path="res://sprites/sprite/tile map.png" id="1_jfw5q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yfyta"]
+size = Vector2(41, 27)
+
+[node name="example 3" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jfw5q")
+region_enabled = true
+region_rect = Rect2(204.74998, 6, 69.000015, 53.999996)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_yfyta")
