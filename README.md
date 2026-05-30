@@ -18,7 +18,7 @@ Controls
 
 -  Left / Right Arrow: Move
 - Space: Jump
-- i put screanshots for each level in the the first file called README
+- i put screanshots for each level in the the first file called Screanshots
 - <img width="1133" height="638" alt="level 1" src="https://github.com/user-attachments/assets/baea8e21-3a1d-4848-8371-152432153750" />
 <img width="1160" height="658" alt="level 3" src="https://github.com/user-attachments/assets/a8954934-db89-40ad-9195-6eff92b203b5" />
 <img width="1131" height="646" alt="level 2" src="https://github.com/user-attachments/assets/ad7258dc-4d24-4cf0-b961-df84bae7ad76" />
